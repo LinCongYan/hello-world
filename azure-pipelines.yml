@@ -1,4 +1,16 @@
 # Starter pipeline
+- task: Application security testing@2025
+  inputs:
+    projectName: 'AzureTest'
+    enableProxy: true
+    enableSastScan: true
+    CheckmarxService: 'cx-lab-joseph-1'
+    enableSastBranching: false
+    fullTeamName: 'CxServer'
+    overrideProjectSettings: true
+    incScan: false
+    forceScan: true
+    enableDependencyScan: false
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
